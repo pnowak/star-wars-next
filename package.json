@@ -1,0 +1,33 @@
+{
+  "name": "star-wars-next",
+  "version": "1.0.0",
+  "description": "Encyclopedia application for star wars world",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnowak/star-wars-next"
+  },
+  "keywords": [
+    "star-wars",
+    "react",
+    "redux",
+    "next"
+  ],
+  "author": "pnowak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pnowak/star-wars-next/issues"
+  },
+  "homepage": "https://github.com/pnowak/star-wars-next#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "next": "^10.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
