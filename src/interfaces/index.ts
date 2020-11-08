@@ -11,19 +11,19 @@ type Category =
   | 'vehicles';
 
 export type FetchState = {
-  [key in Category]: Film | Common;
+  [key in Category]?: Film | Common;
 } & {
-  error: null | string;
+  error?: null | string;
   isLoading: boolean;
   status: 'STARTED' | 'SUCCESSFUL' | 'FAILED' | '';
 };
 
 export type Action = {
-  type: typeof actionTypes;
+  type: keyof actionTypes;
   status: string;
   isLoading: boolean;
   payload: {
-    [key in Category]: Film | Common;
+    [key in Category]?: Film | Common;
   } & {
     error?: string;
   };
