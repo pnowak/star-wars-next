@@ -1,6 +1,10 @@
 import { Film } from './films.interface';
 import { Common } from './rest.interface';
-import { actionTypes } from '../actions';
+import {
+  FETCH_FILMS_STARTED,
+  FETCH_FILMS_SUCCEEDED,
+  FETCH_FILMS_FAILED,
+} from '../actions';
 
 type Category =
   | 'films'
@@ -19,7 +23,10 @@ export type FetchState = {
 };
 
 export type Action = {
-  type: keyof actionTypes;
+  type:
+    | typeof FETCH_FILMS_STARTED
+    | typeof FETCH_FILMS_SUCCEEDED
+    | typeof FETCH_FILMS_FAILED;
   status: string;
   isLoading: boolean;
   payload: {
