@@ -7,6 +7,9 @@ import {
   FETCH_PEOPLE_STARTED,
   FETCH_PEOPLE_SUCCEEDED,
   FETCH_PEOPLE_FAILED,
+  FETCH_PLANETS_STARTED,
+  FETCH_PLANETS_SUCCEEDED,
+  FETCH_PLANETS_FAILED,
 } from '../actions';
 
 type Category =
@@ -32,7 +35,10 @@ export type Action = {
     | typeof FETCH_FILMS_FAILED
     | typeof FETCH_PEOPLE_STARTED
     | typeof FETCH_PEOPLE_SUCCEEDED
-    | typeof FETCH_PEOPLE_FAILED;
+    | typeof FETCH_PEOPLE_FAILED
+    | typeof FETCH_PLANETS_STARTED
+    | typeof FETCH_PLANETS_SUCCEEDED
+    | typeof FETCH_PLANETS_FAILED;
   status: string;
   isLoading: boolean;
   payload: {

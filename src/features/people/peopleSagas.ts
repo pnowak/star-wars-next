@@ -7,7 +7,7 @@ import {
 } from '../../actions';
 import { fetchJSON } from '../../utils/fetchJSON';
 
-export function* fetchFilms(): SagaIterator {
+export function* fetchPeople(): SagaIterator {
   yield put({ type: FETCH_PEOPLE_STARTED });
 
   try {
