@@ -16,6 +16,9 @@ import {
   FETCH_STARSHIPS_STARTED,
   FETCH_STARSHIPS_SUCCEEDED,
   FETCH_STARSHIPS_FAILED,
+  FETCH_VEHICLES_STARTED,
+  FETCH_VEHICLES_SUCCEEDED,
+  FETCH_VEHICLES_FAILED,
 } from '../actions';
 
 type Category =
@@ -50,7 +53,10 @@ export type Action = {
     | typeof FETCH_SPECIES_FAILED
     | typeof FETCH_STARSHIPS_STARTED
     | typeof FETCH_STARSHIPS_SUCCEEDED
-    | typeof FETCH_STARSHIPS_FAILED;
+    | typeof FETCH_STARSHIPS_FAILED
+    | typeof FETCH_VEHICLES_STARTED
+    | typeof FETCH_VEHICLES_SUCCEEDED
+    | typeof FETCH_VEHICLES_FAILED;
   status: string;
   isLoading: boolean;
   payload: {
